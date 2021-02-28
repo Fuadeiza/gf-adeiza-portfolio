@@ -753,7 +753,7 @@ h6 i {
 }
 
 .pro {
-  width: 360px;
+  width: 320px;
   height: 250px;
   border-radius: 10px;
   background: white;
@@ -865,7 +865,7 @@ main {
 
 .pro img {
   display: absolute;
-  width: 360px;
+  width: 320px;
   height: 250px;
   border-radius: 10px;
 }
