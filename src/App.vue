@@ -452,7 +452,7 @@ body {
   margin-left: 20px;
   font-size: 1.4em;
   cursor: pointer;
-  z-index: 4;
+  z-index: 999;
 }
 .logo img {
   width: 60px;
