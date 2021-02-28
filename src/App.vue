@@ -62,7 +62,7 @@
                 ><i class="fa fa-arrow-down" style="text-align: center"></i
               ></span>
             </h6>
-            <a href="#" class="btn-resume">Download Resume</a>
+            <a href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing" class="btn-resume">Download Resume</a>
           </div>
         </section>
 
@@ -221,7 +221,7 @@
                 </div>
               </div>
               <div id="rock" class="pro" v-b-modal.modalPopover-rock>
-                <img src="./assets/revoze.png" alt="" />
+                <img src="./assets/rock.png" alt="" />
                 <div>
                   <b-modal
                     id="modalPopover-rock"
