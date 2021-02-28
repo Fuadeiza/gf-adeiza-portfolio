@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navmobile">
-      <Push :closeOnNavigation="true" v-if="mobileView" width="250">
+      <Push :closeOnNavigation="true" v-if="mobileView" width="270">
         <scrollactive class="nav-items">
           <a href="#homeView" class="scrollactive-item">
             <i class="fa fa-home"> <span class="nav-item"> Home</span> </i>
@@ -25,7 +25,6 @@
           <a href="https://www.linkedin.com/in/garba-adeiza-fuad-772284123/"
             ><img src="icons/linkedin.svg" class="social-icon"
           /></a>
-          <a href="#"><img src="icons/facebook.svg" class="social-icon" /></a>
           <a href="#"><img src="icons/twitter.svg" class="social-icon" /></a>
         </div>
       </Push>
@@ -56,16 +55,16 @@
     </div>
 
     <div id="app">
-      <!-- <Menu /> -->
+      <Menu />
       <main id="page-wrap">
         <section id="homeView">
           <img id="g-anim" src="/icons/profile-image.jpg" alt="" />
           <div class="intro">
-            <h4>
-              Hello!<span class="wave">👋🏾</span> <span class="msg"></span>
-            </h4>
+            <h5>
+              Hi there!<span class="wave">👋🏾</span> <span class="msg"></span>
+            </h5>
             <p></p>
-            <h6 class="glow"><i> I'm just a guy who codes for fun. </i></h6>
+
             <br />
 
             <a
@@ -371,6 +370,7 @@ export default {
     // Register your components
     // PushRotate,
     Push,
+    // Bubble,
   },
 
   created() {
@@ -644,24 +644,24 @@ body {
 }
 
 .bm-cross-button {
-  height: 30px;
-  width: 30px;
+  height: 30px !important;
+  width: 30px !important;
 }
 
 .cross-style {
-  position: absolute;
-  top: 20px;
-  right: 5px;
-  width: 30px;
-  cursor: pointer;
+  position: absolute !important;
+  top: 20px !important;
+  right: 5px !important;
+  width: 30px !important;
+  cursor: pointer !important;
 }
 
 .bm-burger-button {
   position: fixed;
-  width: 30px;
-  height: 20px;
-  left: 20px;
-  top: 20px;
+  width: 30px !important;
+  height: 20px !important;
+  left: 20px !important;
+  top: 20px !important;
   cursor: pointer;
   z-index: 3;
 }
