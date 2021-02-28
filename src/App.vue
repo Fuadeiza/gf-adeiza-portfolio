@@ -247,7 +247,7 @@
                 </div>
               </div>
               <div id="music" class="pro" v-b-modal.modalPopover-music>
-                <img src="./assets/revoze.png" alt="" />
+                <img src="./assets/rmusic.png" alt="" />
                 <div>
                   <b-modal
                     id="modalPopover-music"
@@ -265,7 +265,7 @@
                       </a>
                     </p>
 
-                    <p>It is a 100% simple HTML and CSS made web application</p>
+                    <p>It is a 100% simple Vuejs and CSS made web application for playing music from a playlist, with a simple UI </p>
                   </b-modal>
                 </div>
               </div>
