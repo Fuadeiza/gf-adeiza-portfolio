@@ -56,6 +56,7 @@
     </div>
 
     <div id="app">
+<Menu/>
       <main id="page-wrap">
         <section id="homeView">
           <img id="g-anim" src="/icons/profile-image.jpg" alt="" />
