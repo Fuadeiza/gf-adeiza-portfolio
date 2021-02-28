@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navmobile">
-      <Bubble v-if="mobileView">
+      <Push :closeOnNavigation="true" v-if="mobileView" width="250">
         <scrollactive class="nav-items">
           <a href="#homeView" class="scrollactive-item">
             <i class="fa fa-home"> <span class="nav-item"> Home</span> </i>
@@ -28,7 +28,7 @@
           <a href="#"><img src="icons/facebook.svg" class="social-icon" /></a>
           <a href="#"><img src="icons/twitter.svg" class="social-icon" /></a>
         </div>
-      </Bubble>
+      </Push>
       <div class="navdesktop" v-if="!mobileView">
         <div class="nav">
           <div class="logo">
@@ -42,6 +42,13 @@
                 <a href="#projects" class="scrollactive-item">Projects </a>
               </li>
               <li><a href="#contact" class="scrollactive-item">Contact </a></li>
+              <!-- <li>
+                <a
+                  href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
+                  target="_blank"
+                  >résumé</a
+                >
+              </li> -->
             </ul>
           </scrollactive>
         </div>
@@ -56,16 +63,16 @@
             <h4>
               Hello!<span class="wave">👋🏾</span> <span class="msg"></span>
             </h4>
-            <h6>
-              Checkout my Resume
-              <span
-                ><i class="fa fa-arrow-down" style="text-align: center"></i
-              ></span>
-            </h6>
+            <p></p>
+            <h6 class="glow"><i> I'm just a guy who codes for fun. </i></h6>
+            <br />
+
             <a
               href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
               class="btn-resume"
-              >Download Resume</a
+              target="_blank"
+            >
+              Download Resume</a
             >
           </div>
         </section>
@@ -74,12 +81,14 @@
           <div class="about-overlay">
             <div class="about-header"><h2>ABOUT ME</h2></div>
             <div class="about-text">
-              My name is Garba Adeiza Fuad, and I have over 2years of experience
-              in active programming.
-              <div>
-                During the course of these years up till now, I have met, worked
-                and collaborated with great minds home and abroad to build tech
-                that solves problem.
+              <div class="intro-about">
+                My name is Garba Adeiza Fuad, and I have over 2years of
+                experience in active programming.
+                <div>
+                  During the course of these years up till now, I have met,
+                  worked and collaborated with great minds home and abroad to
+                  build tech that solves problem.
+                </div>
               </div>
               <div class="tech-used">
                 <h6>So far these are the technologies I've used.</h6>
@@ -88,23 +97,42 @@
                     <h6>For Web development:</h6>
                     <ul>
                       <li>HTML/HTML5</li>
-                      <li>CSS</li>
+                      <li>CSS/CSS3</li>
                       <li>JavaScript</li>
-                      <li>VueJS</li>
+                      <li>VueJS/Vue Router/Vuex</li>
                       <li>Bootstrap</li>
+                      <li>BootstrapVue</li>
                       <li>Vuetify</li>
+                      <li>PostgreSQL</li>
+                      <li>MySQL</li>
+                      <li>MongoDB</li>
                     </ul>
                   </div>
 
                   <div class="ml">
                     <h6>With Python:</h6>
                     <ul>
-                      <li>Python</li>
                       <li>Matplotlib</li>
+                      <li>Scrapy</li>
                       <li>Django</li>
                       <li>Flask</li>
                       <li>Scikit-learn</li>
+                      <li>TensorFlow</li>
                       <li>Web Scraping/Crawling</li>
+                      <li>API integration/Development</li>
+                    </ul>
+                  </div>
+
+                  <div class="dev-tools">
+                    <h6>Other Tools:</h6>
+                    <ul>
+                      <li>Github</li>
+                      <li>Visual Studio</li>
+                      <li>Docker</li>
+                      <li>AWS</li>
+                      <li>Heroku</li>
+                      <li>Jupyter Notebook</li>
+                      <li>Linux</li>
                     </ul>
                   </div>
                 </div>
@@ -118,7 +146,7 @@
             <h2>Projects I've worked on :</h2>
             <span class="line"> </span>
           </div>
-          <b-container>
+          <div class="project-cover">
             <div class="row-cover">
               <div class="pro-row">
                 <div id="revoze" class="pro" v-b-modal.modalPopover>
@@ -160,6 +188,7 @@
                       <p>
                         <a
                           href="https://github.com/Fuadeiza/Baskotii-Django-App"
+                          target="_blank"
                           v-b-tooltip
                           title="Baskotii"
                           >Baskotii</a
@@ -213,6 +242,7 @@
                     <p>
                       <a
                         href="https://github.com/Fuadeiza/e-Vents"
+                        target="_blank"
                         v-b-tooltip
                         title="e-Vents"
                       >
@@ -236,16 +266,17 @@
                     <p>
                       <a
                         href="https://github.com/Fuadeiza/RockPaperScissors"
+                        target="_blank"
                         v-b-tooltip
                         title="Rock Paper Scissors"
                       >
-                        e-Vents
+                        Rock Paper Scissors Game
                       </a>
                     </p>
 
                     <p>
                       It is a fun HTML, CSS and VanillaJs website for playing
-                      rock paper scissors with the computer
+                      rock paper scissors with a bot.
                     </p>
                   </b-modal>
                 </div>
@@ -262,59 +293,57 @@
                     <p>
                       <a
                         href="https://github.com/Fuadeiza/"
+                        target="_blank"
                         v-b-tooltip
                         title="e-Vents"
                       >
-                        e-Vents
+                        Music App
                       </a>
                     </p>
 
                     <p>
                       It is a 100% simple Vuejs and CSS made web application for
-                      playing music from a playlist, with a simple UI
+                      playing music from a playlist, with a simple UI and
+                      navigations.
                     </p>
                   </b-modal>
                 </div>
               </div>
             </div>
-          </b-container>
+          </div>
         </section>
         <section id="contact">
-          <div class="contact-me">
-            <div class="contact-header">
-              <span class="line"> </span>
-              <h1>Contact</h1>
-              <span class="line"> </span>
-            </div>
-
-            <b-container>
-              <div class="contact-content">
-                <div class="if-text">
-                  If you want to get intouch, Kindly send me an email or via any
-                  of these other methods:
-                </div>
-
-                <div class="methods">
-                  <a href="https://github.com/Fuadeiza/"
-                    ><i class="fa fa-github"></i> @Fuadeiza</a
-                  >
-                  <a
-                    href="https://www.linkedin.com/in/garba-adeiza-fuad-772284123/"
-                    ><i class="fa fa-linkedin"></i>Garba Adeiza Fuad
-                  </a>
-
-                  <a href="mailto: garbafuad@gmail.com"
-                    ><i class="fa fa-envelope"></i>garbafuad@gmail.com
-                  </a>
-                </div>
-              </div>
-            </b-container>
+          <div class="contact-header">
+            <h2>Contact</h2>
           </div>
+
+          <b-container>
+            <div class="contact-content">
+              <div class="if-text">
+                If you want to get intouch, Kindly send me an email or via any
+                of these other methods:
+              </div>
+
+              <div class="methods">
+                <a href="https://github.com/Fuadeiza/" target="_blank"
+                  ><i class="fa fa-github"></i> @Fuadeiza</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/garba-adeiza-fuad-772284123/"
+                  ><i class="fa fa-linkedin"></i>Garba Adeiza Fuad
+                </a>
+
+                <a href="mailto: garbafuad@gmail.com"
+                  ><i class="fa fa-envelope"></i>garbafuad@gmail.com
+                </a>
+              </div>
+            </div>
+          </b-container>
         </section>
         <div class="footer">
           <div class="bottom-line"></div>
           <div class="made-by">
-            <small>x Copyright 2021 ©. All rights reserved. </small>
+            <small>x Copyright 2021 ©. Garba Adeiza Fuad</small>
           </div>
         </div>
       </main>
@@ -323,7 +352,7 @@
 </template>
 
 <script>
-import { Bubble } from "vue-burger-menu";
+import { Push } from "vue-burger-menu";
 
 export default {
   data: () => {
@@ -338,8 +367,9 @@ export default {
     },
   },
   components: {
-    Bubble, // Register your components
+    // Register your components
     // PushRotate,
+    Push,
   },
 
   created() {
@@ -404,10 +434,10 @@ body {
 .btn-resume {
   color: #fff;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   font-weight: 100;
   border-radius: 12px;
-  padding: 8px 12px;
+  padding: 8px 8px;
   transition: 0.5s;
   text-decoration: none;
 }
@@ -504,8 +534,8 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   margin-bottom: 40px;
-  width: 180px;
-  border-radius: 80px;
+  width: 250px;
+  border-radius: 50px;
   z-index: 1;
 }
 #g-anim img {
@@ -677,11 +707,16 @@ body {
   text-align: left;
 }
 .web h6,
-.ml h6 {
+.ml h6,
+.dev-tools h6 {
   text-align: left;
 }
+h6 i {
+  color: #03e9f4;
+}
 .web li,
-.ml li {
+.ml li,
+.dev-tools li {
   color: #03e9f4;
   font-size: small;
   text-align: left;
@@ -695,7 +730,7 @@ body {
   display: flex;
   color: white;
   border-radius: 20px;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -722,7 +757,7 @@ body {
   border-radius: 10px;
   background: white;
   transform: 0.4s ease-in-out;
-  margin: 20px;
+  margin: 10px;
   /* padding: 2px; */
   animation: project-anim 3s forwards ease-in-out;
   transform: scale(1);
@@ -743,6 +778,26 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.glow {
+  /* font-size: 80px; */
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
 
@@ -796,7 +851,6 @@ main {
 .line {
   width: 50px;
   background: #03e9f4;
-  text-shadow: #212121;
   height: 2px;
   margin: 20px;
 }
@@ -857,6 +911,10 @@ main {
   text-align: start;
 } */
 
+.contact-header h2 {
+  border-bottom: #03e9f4;
+}
+
 .methods {
   display: flex;
   justify-content: space-between;
@@ -881,6 +939,12 @@ main {
   /* margin-top: 150px; */
   flex-direction: column;
   /* margin-bottom: 40px; */
+}
+
+.intro-about {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
 }
 
 .bottom-line {
