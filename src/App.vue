@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navmobile">
-      <Push :closeOnNavigation="true" v-if="mobileView" width="250">
+      <Slide :closeOnNavigation="true" v-if="mobileView" width="250">
         <scrollactive class="nav-items">
           <a href="#homeView" class="scrollactive-item">
             <i class="fa fa-home"> <span class="nav-item"> Home</span> </i>
@@ -28,7 +28,7 @@
           <a href="#"><img src="icons/facebook.svg" class="social-icon" /></a>
           <a href="#"><img src="icons/twitter.svg" class="social-icon" /></a>
         </div>
-      </Push>
+      </Slide>
       <div class="navdesktop" v-if="!mobileView">
         <div class="nav">
           <div class="logo">
@@ -353,7 +353,7 @@
 </template>
 
 <script>
-import { Push } from "vue-burger-menu";
+import { Slide } from "vue-burger-menu";
 
 export default {
   data: () => {
@@ -370,7 +370,7 @@ export default {
   components: {
     // Register your components
     // PushRotate,
-    Push,
+    Slide,
   },
 
   created() {
@@ -845,7 +845,7 @@ main {
 }
 
 #projects {
-  margin-top: 50px;
+  margin-top: 30px;
   color: #000000;
 }
 
