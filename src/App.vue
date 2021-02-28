@@ -62,7 +62,11 @@
                 ><i class="fa fa-arrow-down" style="text-align: center"></i
               ></span>
             </h6>
-            <a href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing" class="btn-resume">Download Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
+              class="btn-resume"
+              >Download Resume</a
+            >
           </div>
         </section>
 
@@ -247,7 +251,7 @@
                 </div>
               </div>
               <div id="music" class="pro" v-b-modal.modalPopover-music>
-                <img src="./assets/rmusic.png" alt="" />
+                <img src="./assets/music.png" alt="" />
                 <div>
                   <b-modal
                     id="modalPopover-music"
@@ -265,7 +269,10 @@
                       </a>
                     </p>
 
-                    <p>It is a 100% simple Vuejs and CSS made web application for playing music from a playlist, with a simple UI </p>
+                    <p>
+                      It is a 100% simple Vuejs and CSS made web application for
+                      playing music from a playlist, with a simple UI
+                    </p>
                   </b-modal>
                 </div>
               </div>
