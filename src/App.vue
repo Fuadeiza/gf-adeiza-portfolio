@@ -60,9 +60,9 @@
         <section id="homeView">
           <img id="g-anim" src="/icons/profile-image.jpg" alt="" />
           <div class="intro">
-            <h4>
+            <h5>
               Hi there! <span class="wave">👋🏾</span> <span class="msg"></span>
-            </h4>
+            </h5>
             <br />
             <a
               href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
@@ -76,7 +76,11 @@
 
         <section id="about">
           <div class="about-overlay">
-            <div class="about-header"><h2>ABOUT ME</h2></div>
+            <div class="about-header">
+              <span class="line"></span>
+              <h5>ABOUT ME</h5>
+              <span class="line"></span>
+            </div>
             <div class="about-text">
               <div class="intro-about">
                 My name is Garba Adeiza Fuad, and I have over 2years of
@@ -631,7 +635,6 @@ body {
 }
 .bm-item-list {
   color: #b8b7ad;
-  /* margin-left: 10%; */
   font-size: 25px;
 }
 
@@ -649,17 +652,17 @@ body {
 }
 
 .bm-burger-button {
-  position: fixed;
+  position: fixed !important;
   width: 30px !important;
   height: 20px !important;
   left: 20px !important;
-  top: 20px;
+  top: 20px !important;
   cursor: pointer;
   z-index: 3;
 }
 .bm-burger-bars {
-  background-color: #ffff;
-  border-radius: 2px;
+  background-color: #ffff !important;
+  border-radius: 2px !important;
 }
 
 .bm-overlay {
@@ -670,8 +673,8 @@ body {
 .bm-menu {
   background: linear-gradient(135deg, #141e30 20%, #1c4472 50%) !important;
   /* opacity: 0.9; */
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px !important;
+  border-top-right-radius: 50px !important;
 }
 #about {
   display: flex;
@@ -686,8 +689,7 @@ body {
 
 .about-text {
   width: 90%;
-  border: 1px dash red;
-  /* justify-content: center; */
+
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -818,7 +820,8 @@ main {
 }
 
 .project-header,
-.contact-header {
+.contact-header,
+.about-header {
   display: flex;
   justify-content: center;
   align-items: center;
