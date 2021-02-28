@@ -56,6 +56,7 @@
     </div>
 
     <div id="app">
+      <!-- <Menu /> -->
       <main id="page-wrap">
         <section id="homeView">
           <img id="g-anim" src="/icons/profile-image.jpg" alt="" />
@@ -492,7 +493,7 @@ body {
   /* margin-top: 150px; */
   width: 100%;
   height: 100vh;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 2px;
   align-items: center;
   justify-content: center;
