@@ -846,53 +846,7 @@ main {
 
 #projects {
   margin-top: 50px;
-  color: #000000;
-}
-
-.line {
-  width: 50px;
-  background: #03e9f4;
-  height: 2px;
-  margin: 20px;
-}
-.project-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: #212121;
-}
-
-.pro img {
-  display: absolute;
-  width: 320px;
-  height: 250px;
-  border-radius: 10px;
-}
-
-/* #baskotii {
-  background: url("~@/assets/baskotii.png") no-repeat center/ cover;
-}
-
-#revoze {
-  background: url("~@/assets/revoze.png") no-repeat center/ cover;
-}
-#livingwriter {
-  background: url("~@/assets/livingwriter.png") no-repeat center/ cover;
-}
-#events {
-  background: url("~@/assets/events.png") no-repeat center/ cover;
-}
-#rock {
-  background: url("~@/assets/revoze.png") no-repeat center/ cover;
-}
-#music {
-  background: url("~@/assets/revoze.png") no-repeat center/ cover;
-} */
-
-/* .label {
-  width: 100%;
-  height: 50%;
+  t: 50%;
   margin-top: 125px;
   top: 0;
   left: 0;
@@ -901,9 +855,8 @@ main {
   justify-content: center;
   align-items: flex-end;
   border-radius: 10px;
-} */
-
-#contact {
+}
+*/ #contact {
   margin-top: 30px;
   width: 100%;
   min-height: 90vh;
