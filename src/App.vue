@@ -60,13 +60,10 @@
         <section id="homeView">
           <img id="g-anim" src="/icons/profile-image.jpg" alt="" />
           <div class="intro">
-            <h5>
-              Hi there!<span class="wave">👋🏾</span> <span class="msg"></span>
-            </h5>
-            <p></p>
-
+            <h4>
+              Hi there! <span class="wave">👋🏾</span> <span class="msg"></span>
+            </h4>
             <br />
-
             <a
               href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
               class="btn-resume"
@@ -143,95 +140,88 @@
         <section id="projects">
           <div class="project-header">
             <span class="line"> </span>
-            <h2>Projects I've worked on :</h2>
+            <h5>Projects I've worked on</h5>
             <span class="line"> </span>
           </div>
           <div class="project-cover">
-            <div class="row-cover">
-              <div class="pro-row">
-                <div id="revoze" class="pro" v-b-modal.modalPopover>
-                  <img src="./assets/revoze.png" alt="" />
-                  <div>
-                    <b-modal
-                      id="modalPopover"
-                      title="Revoze Construction App"
-                      hide-footer
-                    >
-                      <p></p>
-                      <p>
-                        This
-                        <a
-                          href="https://www.ardentpeak.dev"
-                          v-b-tooltip
-                          title="Revoze Construction App"
-                          >Web App</a
-                        >
-                        was made with Vuejs frontend, MySql and Django restAPI.
-                      </p>
+            <div class="pro-row">
+              <div id="revoze" class="pro" v-b-modal.modalPopover>
+                <img src="./assets/revoze.png" alt="" />
+                <div>
+                  <b-modal
+                    id="modalPopover"
+                    title="Revoze Construction App"
+                    hide-footer
+                  >
+                    <p></p>
+                    <p>
+                      This
+                      <a
+                        href="https://www.ardentpeak.dev"
+                        v-b-tooltip
+                        title="Revoze Construction App"
+                        >Web App</a
+                      >
+                      was made with Vuejs frontend, MySql and Django restAPI.
+                    </p>
 
-                      <p>
-                        It is an online web app for construction materials order
-                        workflow.
-                      </p>
-                    </b-modal>
-                  </div>
+                    <p>
+                      It is an online web app for construction materials order
+                      workflow.
+                    </p>
+                  </b-modal>
                 </div>
-                <div id="baskotii" class="pro" v-b-modal.modalPopover-baskotii>
-                  <img src="./assets/baskotii.png" alt="" />
-                  <div>
-                    <b-modal
-                      id="modalPopover-baskotii"
-                      title="Baskotii App"
-                      hide-footer
-                    >
-                      <p></p>
-                      <p>
-                        <a
-                          href="https://github.com/Fuadeiza/Baskotii-Django-App"
-                          target="_blank"
-                          v-b-tooltip
-                          title="Baskotii"
-                          >Baskotii</a
-                        >
-                        is an e-commerce web app for selling cakes and biscuits
-                        made with MySql and Django restframework with dual
-                        languages (Arabic and English)
-                      </p>
-                    </b-modal>
-                  </div>
+              </div>
+              <div id="baskotii" class="pro" v-b-modal.modalPopover-baskotii>
+                <img src="./assets/baskotii.png" alt="" />
+                <div>
+                  <b-modal
+                    id="modalPopover-baskotii"
+                    title="Baskotii App"
+                    hide-footer
+                  >
+                    <p></p>
+                    <p>
+                      <a
+                        href="https://github.com/Fuadeiza/Baskotii-Django-App"
+                        target="_blank"
+                        v-b-tooltip
+                        title="Baskotii"
+                        >Baskotii</a
+                      >
+                      is an e-commerce web app for selling cakes and biscuits
+                      made with MySql and Django restframework with dual
+                      languages (Arabic and English)
+                    </p>
+                  </b-modal>
                 </div>
-                <div
-                  id="livingwriter"
-                  class="pro"
-                  v-b-modal.modalPopover-living
-                >
-                  <img src="./assets/livingwriter.png" alt="" />
-                  <div>
-                    <b-modal
-                      id="modalPopover-living"
-                      title="LivingWriter Web App"
-                      hide-footer
-                    >
-                      <p></p>
-                      <p>
-                        This
-                        <a href="#" v-b-tooltip title="Living Writers"
-                          >Web App</a
-                        >
-                        was made with Vuejs and DRF.( A clone of Twine
-                        <a href="#"></a> )
-                      </p>
+              </div>
+              <div id="livingwriter" class="pro" v-b-modal.modalPopover-living>
+                <img src="./assets/livingwriter.png" alt="" />
+                <div>
+                  <b-modal
+                    id="modalPopover-living"
+                    title="LivingWriter Web App"
+                    hide-footer
+                  >
+                    <p></p>
+                    <p>
+                      This
+                      <a href="#" v-b-tooltip title="Living Writers">Web App</a>
+                      was made with Vuejs and DRF.( A clone of Twine
+                      <a href="#"></a> )
+                    </p>
 
-                      <p>
-                        It is an web app for story telling with visual
-                        representation/ tree diagrams to show hierachy of the
-                        Story details.
-                      </p>
-                    </b-modal>
-                  </div>
+                    <p>
+                      It is an web app for story telling with visual
+                      representation/ tree diagrams to show hierachy of the
+                      Story details.
+                    </p>
+                  </b-modal>
                 </div>
               </div>
             </div>
+
             <div class="pro-row2">
               <div id="events" class="pro" v-b-modal.modalPopover-events>
                 <img src="./assets/events.png" alt="" />
@@ -314,7 +304,9 @@
         </section>
         <section id="contact">
           <div class="contact-header">
-            <h2>Contact</h2>
+            <span class="line"></span>
+            <h5>Contact</h5>
+            <span class="line"></span>
           </div>
 
           <b-container>
@@ -661,7 +653,7 @@ body {
   width: 30px !important;
   height: 20px !important;
   left: 20px !important;
-  top: 20px !important;
+  top: 20px;
   cursor: pointer;
   z-index: 3;
 }
@@ -753,7 +745,7 @@ h6 i {
 }
 
 .pro {
-  width: 320px;
+  width: 360px;
   height: 250px;
   border-radius: 10px;
   background: white;
@@ -763,6 +755,11 @@ h6 i {
   animation: project-anim 3s forwards ease-in-out;
   transform: scale(1);
   transition: 1s;
+}
+
+.pro img {
+  width: 360px;
+  height: 250px;
 }
 @keyframes project-anim {
   0% {
@@ -779,26 +776,6 @@ h6 i {
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-.glow {
-  /* font-size: 80px; */
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
 
@@ -829,14 +806,6 @@ h6 i {
   }
 }
 
-.row-cover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -846,27 +815,26 @@ main {
 
 #projects {
   margin-top: 50px;
-  t: 50%;
-  margin-top: 125px;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project-header,
+.contact-header {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  border-radius: 10px;
+  align-items: center;
 }
-*/ #contact {
+
+.line {
+  width: 50px;
+  height: 3px;
+  background: #03e9f4;
+  margin: 10px;
+}
+
+#contact {
   margin-top: 30px;
   width: 100%;
   min-height: 90vh;
-}
-/* .if-text {
-  text-align: start;
-} */
-
-.contact-header h2 {
-  border-bottom: #03e9f4;
 }
 
 .methods {
