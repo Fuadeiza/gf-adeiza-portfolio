@@ -43,7 +43,7 @@
               <li><a href="#contact" class="scrollactive-item">Contact </a></li>
               <!-- <li>
                 <a
-                  href="https://drive.google.com/file/d/1Xd_R2EzeY7NAnLqDDrWQmuIVe5iKj6lb/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1o02nET8dksG4QJ2j64fiKGKA5gzLUgwS/view?usp=sharing"
                   target="_blank"
                   >résumé</a
                 >
