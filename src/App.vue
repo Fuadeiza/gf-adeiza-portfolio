@@ -148,6 +148,9 @@
             <span class="line"> </span>
           </div>
           <div class="project-cover">
+            <div class="click">
+              <h6><small>(Please click on images to see details)</small></h6>
+            </div>
             <div class="pro-row">
               <div id="revoze" class="pro" v-b-modal.modalPopover>
                 <img src="./assets/revoze.png" alt="" />
@@ -159,19 +162,20 @@
                   >
                     <p></p>
                     <p>
-                      This
                       <a
                         href="https://www.ardentpeak.dev"
                         v-b-tooltip
                         title="Revoze Construction App"
-                        >Web App</a
+                        >Revoze Constructions</a
                       >
-                      was made with Vuejs frontend, MySql and Django restAPI.
+                      was made with Vuejs frontend, MySql and Django rest
+                      framework.
                     </p>
 
                     <p>
                       It is an online web app for construction materials order
-                      workflow.
+                      workflow with different level of authorization( access and
+                      privilege) depending on who's logged in.
                     </p>
                   </b-modal>
                 </div>
@@ -191,7 +195,7 @@
                         target="_blank"
                         v-b-tooltip
                         title="Baskotii"
-                        >Baskotii</a
+                        >Baskotii e-commerce</a
                       >
                       is an e-commerce web app for selling cakes and biscuits
                       made with MySql and Django restframework with dual
@@ -210,14 +214,16 @@
                   >
                     <p></p>
                     <p>
-                      This
-                      <a href="#" v-b-tooltip title="Living Writers">Web App</a>
-                      was made with Vuejs and DRF.( A clone of Twine
+                      <a href="#" v-b-tooltip title="Living Writers"
+                        >Living Writer</a
+                      >
+                      was made with Vuejs and Django rest framework.( A clone of
+                      Twine
                       <a href="#"></a> )
                     </p>
 
                     <p>
-                      It is an web app for story telling with visual
+                      It is a web app for story telling with visual
                       representation/ tree diagrams to show hierachy of the
                       Story details.
                     </p>
@@ -244,7 +250,10 @@
                       </a>
                     </p>
 
-                    <p>It is a 100% simple HTML and CSS made web application</p>
+                    <p>
+                      It is a 100% beautiful and amazing HTML and CSS landing
+                      page.
+                    </p>
                   </b-modal>
                 </div>
               </div>
@@ -768,13 +777,13 @@ h6 i {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-3deg);
+    transform: rotate(-5deg);
   }
   /* 50% {
     transform: rotate(0deg);
   } */
   75% {
-    transform: rotate(3deg);
+    transform: rotate(5deg);
   }
   100% {
     transform: rotate(0deg);
